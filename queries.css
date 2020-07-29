@@ -239,30 +239,35 @@
     
     /*MAIN*/
     .naslov {
-        font-size: 70px;
+        top: 20%;
+        font-size: 85px;
     }
     
     .img1 {
         width: 300px;
         height: 225px;
+        top: 65%;
         transform: translate(-150px, -112.5px);
     }
     
     .img2 {
         width: 225px;
         height: 300px;
+        top: 60%;
         transform: translate(-112.5px, -150px);
     }
     
     .img3 {
         width: 225px;
         height: 300px;
+        top: 60%;
         transform: translate(-112.5px, -150px);
     }
     
     .img4 {
         width: 150px;
         height: 199px;
+        top: 55%;
         transform: translate(-75px, -50px);
     }
     
@@ -294,15 +299,14 @@
     .section-1 {
         width: 100vw;
         height: 125vh;
-        grid-template-rows: 50vh 75vh;
-        grid-template-columns: 25vw 75vw;
+        display: block;
     }
 
     .box-2 {
-        top: 50%;
+        top: 5%;
         width: 80%;
         left: 50%;
-        transform: translate(-50%, -70%);
+        transform: translateX(-50%);
         background-color: #a0a9b2;
         padding: 20px;
     }
@@ -312,6 +316,11 @@
     }
     
     .discussion{
+        top: 30%;
+        left: 65%;
+        transform: translateX(-50%);
+        width: 50%;
+        display: flex;
         padding: 20px;
     }
     
@@ -320,10 +329,15 @@
     }
     
     .img-ara {
+        position: absolute;
+        top: 30%;
+        left: 5%;
         width: 266px;
     }
     
     .img-monkey {
+        position: absolute;
+        bottom: -9%;
         height: 400px;
         margin-top: 25%;
         margin-left: 10%;
@@ -333,30 +347,27 @@
         width: 500px;
         height: 300px;
         right: 5%;
-        top: 90%;
+        top: 85%;
         transform: translateY(-50%);
     }
     
     /*SECTION-2*/
     
     .block-atina {
-        position: absolute;
-        width: 100%;
-        left: 0;
-        height: 50%;
+        top: 5%;
     }
     
     .atina-forma {
         width: 800px;
         height: 448px;
-        left: 50%;
-        transform: translateX(-50%);
-        background-size: cover;
     }
 
     .box-text {
         padding: 25px;
         top: 45%;
+        width: 50%;
+        height: auto;
+        display: flex;
     }
 
     .text-box-1 {
@@ -369,9 +380,6 @@
 
 
 @media only screen and (max-device-width:476px){
-    body {
-        overflow: none;
-    }
     
     .naslov {
         text-align: left;
@@ -379,6 +387,11 @@
         top: 10%;
         left: 50%;
         transform: translate(-50%, 0%);
+    }
+    
+    .box1 {
+        height: 55px;
+        font-size: 30px;
     }
     
     .img1 {
@@ -418,9 +431,7 @@
     
     .section-1 {
         width: 100vw;
-        height: 125vh;
-        grid-template-rows: 50vh 75vh;
-        grid-template-columns: 25vw 75vw;
+        height: 150vh;
     }
     
     .box-2 {
@@ -432,14 +443,15 @@
     }
     
     .discussion{
-        top: 0;
-        left: 17%;
+        height: auto;
         padding: 45px;
+        display: flex;
     }
     
     .text-discu {
         color: #ddd;
         font-size: 25px;
+        font-weight: 700;
         text-align: left;
         text-transform: none;
         margin: auto;
@@ -447,12 +459,12 @@
     
     .img-ara {
         width: 266px;
+        left: 5%;
     }
     
     .img-monkey {
-        height: 400px;
-        margin-top: 25%;
-        margin-left: 10%;
+        bottom: -5%;
+        left: 2%;
     }
     
     .polygon-clip-1 {
@@ -465,24 +477,21 @@
     /*SECTION-2*/
     
     .atina-forma {
-        width: 600px;
-        height: 336px;
-        top: 15%;
-        left: 50%;
-        transform: translateX(-50%);
+        width: 900px;
+        height: 506px;
+        top: 0;
         background-size: cover;
     }
 
     .box-text {
         padding: 25px;
-        top: 45%;
-        width: 50%;
+        top: 40%;
     }
 
     .text-box-1 {
         margin-left: 0px;
         margin-right: 0px;
-        font-size: 20px;
+        font-size: 24px;
     }
     
 }
