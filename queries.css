@@ -1,4 +1,4 @@
-@media only screen and (max-width:1400px){
+@media only screen and (max-device-width: 1400px) {
     /*MAIN*/
     .naslov {
         font-size: 85px;
@@ -31,55 +31,81 @@
     .box-2 {
         padding: 25px;
     }
+    
     /*SECTION-1*/
+    .section-1 {
+        width: 100vw;
+        height: 200vh;
+        display: block;
+    }
+
+    .box-2 {
+        top: 5%;
+        width: 80%;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #a0a9b2;
+        padding: 20px;
+    }
+    
     .text-intro {
-        font-size: 30px;
+        font-size: 25px;
     }
     
     .discussion{
-        top: 0;
-        left: 17%;
-        padding: 25px;
+        top: 30%;
+        left: 65%;
+        transform: translateX(-50%);
+        width: 50%;
+        display: flex;
+        padding: 20px;
     }
     
     .text-discu {
-        color: #ddd;
         font-size: 22px;
-        text-align: left;
-        text-transform: none;
-        margin: auto;
+        font-weight: 700;
     }
     
     .img-ara {
+        position: absolute;
+        top: 30%;
+        left: 5%;
         width: 266px;
     }
     
     .img-monkey {
+        position: absolute;
+        bottom: -9%;
         height: 400px;
         margin-top: 25%;
         margin-left: 10%;
     }
     
+    .polygon-clip-1 {
+        position: absolute;
+        background-color: #ece0d9;
+        width: 600px;
+        height: 400px;
+        right: 5%;
+        top: 95%;
+        transform: translateY(-400px);
+    }
+    
+    
     /*SECTION-2*/
+    .section-2 {
+        height: 200vh;
+    }
     
     .block-atina {
         position: absolute;
         width: 100%;
         left: 0;
         height: 50%;
-    }
-    
-    .section-2 {
-        position: relative;
-        background-color: #d9ece5;
-        width: 100vw;
-        height: 100vh;
-        z-index: 1;
-        display: block;
+        top: 5%;
     }
     
     .atina-forma {
-        top: 5%;
         left: 50%;
         transform: translateX(-50%);
         background-size: cover;
@@ -88,24 +114,25 @@
     .box-text {
         width: 80%;
         height: 40%;
-        top: 55%;
+        top: 50%;
         left: 50%;   
         right: 0;
         transform: translateX(-50%);
         padding: 45px;
+        height: auto;
+        display: flex;
     }
 
     .text-box-1 {
         margin-left: 0px;
         margin-right: 0px;
         font-size: 22px;
-         
     }
     
 }
 
 
-@media only screen and (max-width:1200px){
+@media only screen and (max-device-width: 1200px) {
     /*MAIN*/
     .naslov {
         left: 20%;
@@ -161,22 +188,7 @@
     }
     
     /*SECTION-1*/
-    .section-1 {
-        width: 100vw;
-        height: 125vh;
-        grid-template-rows: 50vh 75vh;
-        grid-template-columns: 25vw 75vw;
-    }
 
-    .box-2 {
-        top: 50%;
-        width: 80%;
-        left: 50%;
-        transform: translate(-50%, -70%);
-        background-color: #a0a9b2;
-        padding: 10px;
-    }
-    
     .text-intro {
         font-size: 18px;
     }
@@ -203,24 +215,21 @@
         width: 500px;
         height: 300px;
         right: 5%;
-        top: 90%;
+        top: 95%;
         transform: translateY(-150%);
     }
+    
+    .circle-clip-1 {
+        width: 200px;
+        height: 200px;
+    }
+    
     /*SECTION-2*/
     
-    .block-atina {
-        position: absolute;
-        width: 100%;
-        left: 0;
-        height: 50%;
-    }
     
     .atina-forma {
         width: 800px;
         height: 448px;
-        left: 50%;
-        transform: translateX(-50%);
-        background-size: cover;
     }
 
     .box-text {
@@ -228,14 +237,12 @@
     }
 
     .text-box-1 {
-        margin-left: 0px;
-        margin-right: 0px;
         font-size: 18px;
     }
     
 }
 
-@media only screen and (max-device-width:800px){
+@media only screen and (max-device-width: 800px) {
     
     /*MAIN*/
     .naslov {
@@ -272,29 +279,6 @@
     }
     
     
-    @keyframes disappearToLeft {
-        0% {
-            transform: translateX(25%);
-            opacity: 0;
-        } 
-        30% {
-            transform: translateX(0);
-            opacity: 1;
-        }
-        50% {
-            transform: translateX(0);
-            opacity: 1;
-        }
-        70% {
-            transform: translateX(0);
-            opacity: 1;
-        }
-        100% {
-            transform: translateX(-25%);
-            opacity: 0;
-        }
-    }
-    
     /*SECTION-1*/
     .section-1 {
         width: 100vw;
@@ -302,25 +286,12 @@
         display: block;
     }
 
-    .box-2 {
-        top: 5%;
-        width: 80%;
-        left: 50%;
-        transform: translateX(-50%);
-        background-color: #a0a9b2;
-        padding: 20px;
-    }
     
     .text-intro {
         font-size: 25px;
     }
     
     .discussion{
-        top: 30%;
-        left: 65%;
-        transform: translateX(-50%);
-        width: 50%;
-        display: flex;
         padding: 20px;
     }
     
@@ -347,11 +318,14 @@
         width: 500px;
         height: 300px;
         right: 5%;
-        top: 85%;
-        transform: translateY(-50%);
+        top: 95%;
+        transform: translateY(-250px);
     }
     
     /*SECTION-2*/
+    .section-2 {
+        height: 125vh;
+    }
     
     .block-atina {
         top: 5%;
@@ -362,24 +336,26 @@
         height: 448px;
     }
 
-    .box-text {
-        padding: 25px;
-        top: 45%;
-        width: 50%;
-        height: auto;
-        display: flex;
-    }
-
     .text-box-1 {
         margin-left: 0px;
         margin-right: 0px;
-        font-size: 20px;
+        font-size: 22px;
     }
     
+    /*FOOTER*/
+    footer {
+        height: 20vh;
+    }
+    
+    .info {
+        left: 50%;
+        margin-left: 0;
+        transform: translateX(-50%);
+    }
 }
 
 
-@media only screen and (max-device-width:476px){
+@media only screen and (max-device-width: 476px) {
     
     .naslov {
         text-align: left;
@@ -431,7 +407,7 @@
     
     .section-1 {
         width: 100vw;
-        height: 150vh;
+        height: 125vh;
     }
     
     .box-2 {
@@ -475,47 +451,50 @@
         transform: translateY(-75%);
     }
     /*SECTION-2*/
-    
+    .section-2 {
+        height: 80vh;
+    }
     .atina-forma {
         width: 900px;
         height: 506px;
-        top: 0;
-        background-size: cover;
     }
 
     .box-text {
         padding: 25px;
-        top: 40%;
+        top: 50%;
     }
 
     .text-box-1 {
-        margin-left: 0px;
-        margin-right: 0px;
-        font-size: 24px;
+        font-size: 26px;
+    }
+    /*FOOTER*/
+    footer {
+        height: 20vh;
     }
     
+    .info {
+        top: 50%;
+        left: 50%;
+        margin-left: 0;
+        transform: translate(-50%, -50%);
+    }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media only screen and (max-device-width: 374px) { 
+    
+    .naslov {
+        text-align: left;
+        font-size: 100px;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+    }
+    
+    .section-1 {
+        height: 150vh;    
+    }
+    
+    .section-2 {
+        height: 100vh;
+    }
+}
